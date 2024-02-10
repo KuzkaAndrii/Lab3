@@ -3,9 +3,11 @@ def fact(n):
         return 1
     return n*fact(n-1)
 def Is_p(n):
+	i=1
 	prime = True
 	while i <= n**0.5:
-		prime = prime and n==(n//i)*i
+		prime = prime and n%i!=0
+		i+=1
 	return prime
 def gcd(a, b):
 def f(n):
